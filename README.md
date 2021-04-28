@@ -26,6 +26,8 @@ playerCount_df["Total Players"] = [playerCount]
 #print
 playerCount_df
 ```
+<img width="100" alt="圖片" src="https://user-images.githubusercontent.com/70195202/116376317-be72cf80-a7d5-11eb-9103-ffc4c4e8ff06.png">
+
 
 ### Purchasing Analysis (Total)
 
