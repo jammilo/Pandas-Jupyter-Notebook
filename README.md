@@ -91,8 +91,8 @@ genderTable
   * Average Purchase Price
   * Total Purchase Value
   * Average Purchase Total per Person by Gender
-  ```python
-  #get the columns
+```python
+#get the columns
 genderSize = df.groupby("Gender").size()
 genderAvgPrice = df.groupby("Gender").Price.mean()
 genderTotPrice = df.groupby("Gender").Price.sum()
@@ -111,8 +111,8 @@ genderPurchasingTable["Avg Total Purchase per Person"] = genderPurchasingTable["
 
 #print
 genderPurchasingTable
-  ```
-  <img width="643" alt="圖片" src="https://user-images.githubusercontent.com/70195202/116452524-6d89c800-a823-11eb-91ea-8b894cb4f6e7.png">
+```
+<img width="646" alt="圖片" src="https://user-images.githubusercontent.com/70195202/116453652-c1e17780-a824-11eb-9377-528bcabcd1bb.png">
 
 
 ### Age Demographics
