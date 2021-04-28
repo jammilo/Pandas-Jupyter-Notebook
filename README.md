@@ -15,6 +15,17 @@ The final report should include each of the following:
 ### Player Count
 
 * Total Number of Players
+ ```python
+#get the count
+playerCount = df.SN.nunique()
+
+#create table
+playerCount_df = pd.DataFrame()
+playerCount_df["Total Players"] = [playerCount]
+
+#print
+playerCount_df
+```
 
 ### Purchasing Analysis (Total)
 
