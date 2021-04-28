@@ -122,8 +122,8 @@ genderPurchasingTable
   * Average Purchase Price
   * Total Purchase Value
   * Average Purchase Total per Person by Age Group
-  ```pythpn
-  # Create bins in which to place values based upon player ages
+```pythpn
+# Create bins in which to place values based upon player ages
 bins = [0, 9, 14, 19, 24, 29, 34, 39, 50]
 
 # Create labels for these bins
@@ -185,8 +185,8 @@ agePurchasingTable
   * Purchase Count
   * Average Purchase Price
   * Total Purchase Value
-   ```pythpn
-  #get the columns
+```pythpn
+#get the columns
 sNSize = df.groupby("SN").size()
 sNAvgPrice = df.groupby("SN").Price.mean()
 sNTotPrice = df.groupby("SN").Price.sum()
@@ -204,7 +204,7 @@ sNPurchasingTable["Total Purchase Value"] = sNPurchasingTable["Total Purchase Va
 #print
 sNPurchasingTable = sNPurchasingTable.sort_values(by="Total Purchase Value", ascending=False)
 sNPurchasingTable.head()
-  ```
+```
 <img width="427" alt="圖片" src="https://user-images.githubusercontent.com/70195202/116453190-31a33280-a824-11eb-9c08-0fc0aa0da260.png">
 
 ### Most Popular Items
@@ -215,8 +215,8 @@ sNPurchasingTable.head()
   * Purchase Count
   * Item Price
   * Total Purchase Value
-  ```pythpn
-  #get the columns
+```pythpn
+#get the columns
 itemSize = df.groupby(["Item ID", "Item Name"]).size()
 itemAvgPrice = df.groupby(["Item ID", "Item Name"]).Price.mean()
 itemTotPrice = df.groupby(["Item ID", "Item Name"]).Price.sum()
@@ -236,7 +236,7 @@ itemPurchasingTable["Total Purchase Value"] = itemPurchasingTable["Total Purchas
 
 #print
 itemPurchasingTable.head()
-  ```
+```
 <img width="574" alt="圖片" src="https://user-images.githubusercontent.com/70195202/116453259-47185c80-a824-11eb-8bf3-bee99a41d7cf.png">
 
 ### Most Profitable Items
@@ -247,8 +247,8 @@ itemPurchasingTable.head()
   * Purchase Count
   * Item Price
   * Total Purchase Value
-  ```pythpn
-  #get the columns
+```pythpn
+#get the columns
 itemSize = df.groupby(["Item ID", "Item Name"]).size()
 itemAvgPrice = df.groupby(["Item ID", "Item Name"]).Price.mean()
 itemTotPrice = df.groupby(["Item ID", "Item Name"]).Price.sum()
@@ -268,7 +268,7 @@ itemPurchasingTable["Total Purchase Value"] = itemPurchasingTable["Total Purchas
 
 #print
 itemPurchasingTable.head()
-  ```
+```
  <img width="574" alt="圖片" src="https://user-images.githubusercontent.com/70195202/116453306-55667880-a824-11eb-8e7c-9b906eb6b9be.png">
  
 
